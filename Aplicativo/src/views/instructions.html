@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./../templates/allTemplate.css">
+    <link rel="stylesheet" href="./../templates/styles.css">
+    <title>Instrucciones</title>
+</head>
+
+<body>
+    <div class="w-100" id="colorBack1" style="background: #254053; height: 100%;  box-shadow: 0 0 100px 0px rgba(0,0,0,0.2) inset !important;">
+        <!-- Esta es la textura de las figuras geométricas que está de fondo -->
+        <div class="textureBig w-100"></div>
+        <!-- Este es el contenedor principal -->
+        <div class="container p-4 d-flex">
+            <div class="w-100 d-flex justify-content-center flex-column align-items-center" style="z-index: 1;">
+                <!-- Aquí está el ícono de la felcha en la parte superior izquierda que sirve para regresar a la vista del main -->
+                <div class="w-100 justify-content-start">
+                    <nav aria-label="breadcrumb">
+                        <ol class=" position-absolute mt-3 " id="barra">
+                            <a href="./main.html" class="hvr-icon-grow-rotate" style="border-width: 4px !important; border-radius: 100px !important; color: white !important;"><i class="fa fa-arrow-left hvr-icon" style="font-size: 2em;"></i></a>
+                        </ol>
+                    </nav>
+                </div>
+                <!-- Este es el título de Instrucciones -->
+                <div class="mainButton animated pulse infinite ad-3 m-2 p-2 pr-4 pl-4" style="border-width: 4px !important; border-radius: 100px !important;">
+                    <h3 class="m-0"><i class="fa fa-info-circle"></i> Instrucciones</h3>
+                </div>
+                <div class=" container w-100 mt-5">
+                    <!-- Este es el contenedor donde están las instrucciones, gracias a la clase scroll-none no se verá el scroll en ningún momento -->
+                    <div class="mainButton p-4 ml-5 scroll-none" style="border-radius:50px !important; border-width:5px !important; overflow: auto; height: 570px;">
+                        <!-- Aquí está la información dividida una por una, por una imagen y texto -->
+                        <div class="row mr-0 ml-0 mb-4 w-100 d-flex align-items-center">
+                            <div class="m-2 icon d-flex justify-content-center align-items-center" style="color: #254053;"><i class="fa fa-angellist" style="font-size: 5em;"></i></div>
+                            <div class="col-md-9">
+                                <h2>Primero que todo...</h2>
+                                <p class="m-0">El único modo que cuenta con restricción de movimiento sobre una casilla ya pisada es en el modo competitivo donde el jugador debe pasar las piezas del plano 1 al plano 2, lo que se denominará el recorrido del caballo en
+                                    el Ajedrez M.</p>
+                            </div>
+
+                        </div>
+                        <div class="row mr-0 ml-0 mb-4 w-100 d-flex align-items-center">
+                            <div class="col-md-9">
+                                <h2>Modo Educativo</h2>
+                                <p class="m-0">El jugador debe resolver cada ejercicio para pasar a un siguiente nivel (tener en cuenta tabla de de puntos y errores. En este nivel no existen restricciones de tiempo excepto para el ejercicio del recorrido del caballo
+                                    en el <b>Plano 1 (Reto M)</b>.
+                                </p>
+                            </div>
+                            <div class="m-2 icon d-flex justify-content-center align-items-center" style="color: #254053;"><i class="fa fa-book" style="font-size: 5em;"></i></div>
+                        </div>
+                        <div class="row mr-0 ml-0 mb-4 w-100 d-flex align-items-center">
+                            <div class="m-2 icon d-flex justify-content-center align-items-center" id="creativeIcon" style="color: #254053  ;"><i class="fa fa-pencil" style="font-size: 5em;"></i></div>
+                            <div class="col-md-9">
+                                <h2>Modo Creativo</h2>
+                                <p class="m-0">No existen restricciones de tiempo ni número de movimientos. El jugador no puede repetir un salto de casilla inicia a casilla final ni viceversa. (un trazo ya realizado no permite la superposición de otro trazo en ninguno
+                                    de los dos sentidos.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="row mr-0 ml-0 mb-4 w-100 d-flex align-items-center">
+                            <div class="col-md-9">
+                                <h2>Modo Experto</h2>
+                                <p class="m-0">En el modo experto existen restricciones de tiempo y de movimientos.</p>
+                            </div>
+                            <div class="m-2 icon d-flex justify-content-center align-items-center" id="expertIcon" style="color: #254053;"><i class="fa fa-flash" style="font-size: 5em;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./../templates/allTemplate.js"></script>
+    <script src="./../controllers/instructionsController.js"></script>
+    <script src="./../controllers/configController.js"></script>
+</body>
+
+</html>
